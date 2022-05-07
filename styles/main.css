@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&display=swap');
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Anek Devanagari', sans-serif;
+}
+main {
+    display: grid;
+    grid-area: main;
+}
+
+
+/* Navegation bar  */
+
+#body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+    grid-template-rows: 8vh 1fr 10vh;
+}
+
+.navLogo {
+    width: 7vh;
+}
+
+nav {
+    display: grid;
+    grid-area: nav;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    top: 0px;
+    width: 95%;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Main  */
+
+#portada{
+    display: flex;
+    justify-content: center;
+    background-color: #181818;
+    height: 40vh;
+}
+
+.bug {
+    margin: 0px;
+    padding: 0px;
+}
+
+#categorias {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 40vh;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(235, 235, 235);
+    height: 42vh;
+}
+
+#categorias a img {
+    width: 25vh;
+}
+
+.subCategorias {
+    background-color: #181818;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+ 
+footer {
+    display: grid;
+    grid-area: footer;
+    background-color: rgb(216, 216, 216);
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* PAGINA DE CARRITO DE COMPRAS */
+
+#cart {
+    overflow-y: scroll;
+    background-color: rgb(234, 234, 234);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-del-carrito {
+    background-color: white;
+    display: grid;
+    grid-template-areas: "item1 item2 item3 item4 item5 item6";
+    grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr;
+}
+
+.item img {
+    height: 20vh;
+}
+
+#item1 {
+    display: flex;
+    justify-content: center;
+    grid-area: item1;
+}
+
+#item2 {
+    grid-area: item2;
+}
+
+#item3 {
+    grid-area: item3;
+}
+
+#item4 {
+    grid-area: item4;
+}
+
+#item5 {
+    grid-area: item5;
+}
+
+#item6 {
+    grid-area: item6;
+}
+
+
+
+/* PAGINA DE PRODUCTOS */
+.container-main {
+    color: rgb(0, 0, 0);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 82vh;
+}
+
+.container-main img {
+    height: 15vh;
+}
+
+
+#cat-audifonos, #cat-gadgets, #cat-monitores, #cat-sillas, #cat-teclados{
+    display: grid;
+    grid-template-columns: 35vh 35vh 35vh;
+    grid-template-rows: 30vh;
+    background-color: rgb(199, 199, 199);
+    justify-content: center;
+    align-content: center;
+    border-radius: 2vh;
+    width: 80vw;
+    height: 90%;
+}
+
+.link {
+    width: 20vh;
+}
+
+.container-cat {
+    margin: 1vh;
+    background-color: #ffffff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+}
+
+.container-cat span {
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+/* PAGINA DEL PRODUCTO */
+
+.row-0 {
+    grid-area: image;
+}
+
+.row-1 {
+    grid-area: name;
+}
+
+.row-2 {
+    grid-area: marca;
+}
+
+.row-3 {
+    grid-area: description;
+}
+
+.row-4 {
+    grid-area: price;
+}
+
+.container-producto input {
+    grid-area: input;
+}
+
+.container-producto button {
+    grid-area: button;
+}
+
+.container-producto {
+    display: grid;
+    padding: 10vh;
+    grid-template-areas: 
+    "image name marca"
+    "image description description"
+    "image description description"
+    "image price ."
+    "image input button";
+    grid-template-columns: 
+    2fr 1fr 1fr;
+}
+
+.container-producto img{
+    height: 50vh;
+}
